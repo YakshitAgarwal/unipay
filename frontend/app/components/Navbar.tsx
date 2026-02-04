@@ -1,7 +1,6 @@
 const Navbar = () => {
   return (
     <div className="relative flex justify-between gap-8 px-6 py-3 rounded-full font-[550] bg-linear-to-tr from-slate-950 via-slate-900 to-slate-800 ring-1 ring-white/10 overflow-hidden">
-      {/* subtle glows */}
       <div className="pointer-events-none absolute inset-0">
         <div
           className="absolute -left-6 top-1/2 -translate-y-1/2

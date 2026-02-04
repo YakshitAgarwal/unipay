@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Header from "./Header";
 import Hero from "./Hero";
 
@@ -26,10 +27,8 @@ const HomePage = () => {
       </div>
 
       {/* Footer */}
-      <div className="flex justify-center items-center gap-8">
-        <div>ETHGlobal</div>
-        <div>LI.FI</div>
-        <div>ENS</div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
