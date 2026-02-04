@@ -1,18 +1,28 @@
-import Navbar from "./Navbar";
+import Header from "./Header";
+import Hero from "./Hero";
 
 const HomePage = () => {
   return (
     <div className="h-screen overflow-hidden p-8 flex flex-col">
       {/* Header */}
-      <div className="flex justify-between items-center">
-        <div>Unipay</div>
-        <Navbar />
-        <div>Connect Wallet</div>
+      <div>
+        <Header />
       </div>
 
       {/* Hero Section */}
-      <div className="flex-1 bg-linear-to-tr from-black via-gray-800 to-gray-400 rounded-2xl my-6 p-8">
-        Unipay
+      <div className="flex-1 relative rounded-2xl my-4 p-8 overflow-hidden bg-linear-to-tr from-slate-950 via-slate-900 to-slate-800">
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute -top-24 -left-24 h-84 w-84 rounded-full bg-sky-500/10 blur-3xl" />
+          <div className="absolute top-40 right-84 h-84 w-84 rounded-full bg-sky-500/10 blur-3xl" />
+          <div className="absolute -bottom-24 -right-24 h-84 w-84 rounded-full bg-emerald-500/10 blur-2xl" />
+          <div className="absolute bottom-0 left-60 h-84 w-84 rounded-full bg-emerald-500/10 blur-2xl" />
+          <div className="absolute -top-36 left-130 h-84 w-84 rounded-full bg-emerald-500/10 blur-2xl" />
+        </div>
+
+        {/* content */}
+        <div className="relative z-10">
+          <Hero />
+        </div>
       </div>
 
       {/* Footer */}
