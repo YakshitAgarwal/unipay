@@ -51,13 +51,20 @@ const Hero = () => {
         />
       </div>
       <div className="flex gap-4 mt-10">
-        <button className="relative bg-gray-800 px-4 py-2 rounded-full text-[18px] flex gap-2 justify-center items-center cursor-pointer text-white transition-all duration-300 hover:bg-gray-900 hover:shadow-[0_0_25px_rgba(56,189,248,0.35)] group">
-          <span className="relative z-10">Open App</span>
-          <span className="relative z-10 group-hover:translate-x-0.5 transition-transform">
-            <ArrowUpRight size={18} />
-          </span>
-          <span className="absolute inset-0 rounded-full opacity-0 bg-linear-to-r from-sky-500/30 to-emerald-500/30 blur-xl transition-opacity duration-300 group-hover:opacity-100" />
-        </button>
+        <a
+          href="https://t.me/unipayETH_bot"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="relative bg-gray-800 px-4 py-2 rounded-full text-[18px] flex gap-2 justify-center items-center cursor-pointer text-white transition-all duration-300 hover:bg-gray-900 hover:shadow-[0_0_25px_rgba(56,189,248,0.35)] group">
+            <span className="relative z-10">Open App</span>
+            <span className="relative z-10 group-hover:translate-x-0.5 transition-transform">
+              <ArrowUpRight size={18} />
+            </span>
+            <span className="absolute inset-0 rounded-full opacity-0 bg-linear-to-r from-sky-500/30 to-emerald-500/30 blur-xl transition-opacity duration-300 group-hover:opacity-100" />
+          </button>
+        </a>
+
         <button className="bg-white text-gray-800 px-4 py-2 rounded-full text-[18px] cursor-pointer transition-all duration-300 hover:bg-gray-100 hover:shadow-[0_0_20px_rgba(16,185,129,0.35)] hover:-translate-y-0.5">
           Discover More
         </button>
